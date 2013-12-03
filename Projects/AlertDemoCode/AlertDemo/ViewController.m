@@ -61,26 +61,26 @@
     UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Hello World!" 
                                                       message:@"This is your first UIAlertview message." 
                                                      delegate:self 
-                                            cancelButtonTitle:@"Button 1" 
-                                            otherButtonTitles:@"Button 2", @"Button 3", nil];
+                                            cancelButtonTitle:@"Button Poops"
+                                            otherButtonTitles:@"Button Cat", @"Button Benjamin", nil];
     [message show];
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
 	NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
-	
-	if([title isEqualToString:@"Button 1"])
+    
+	if([title isEqualToString:@"Button Poops"])
 	{
-		NSLog(@"Button 1 was selected.");
+		NSLog(@"Get out of my house");
 	}
-	else if([title isEqualToString:@"Button 2"])
+	else if([title isEqualToString:@"Button Cat"])
 	{
-		NSLog(@"Button 2 was selected.");
+		NSLog(@"Who are you?");
 	}
-	else if([title isEqualToString:@"Button 3"])
+	else if([title isEqualToString:@"Button Benjamin"])
 	{
-		NSLog(@"Button 3 was selected.");
+		NSLog(@"Why are you following me?");
 	}	
 }
 
